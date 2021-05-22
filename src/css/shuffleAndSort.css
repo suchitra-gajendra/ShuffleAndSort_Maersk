@@ -1,0 +1,141 @@
+body {
+font-family: sans-serif;
+}
+
+#shuffleAndSortGrids {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));
+	grid-template-rows: 200px 200px 200px;
+	padding-right: 30px;
+    border-top: 10px solid #bfbfbf;
+}
+#mainContainer {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.grids{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: -webkit-xxx-large;
+	color: #ffffff;
+}
+
+.grid-1, .grid-8{
+	background: #6f98a8;
+}
+.grid-2, .grid-4{
+	background: #2b8ead;
+}
+.grid-6, .grid-7{
+	background: #bfbfbf;
+}
+.grid-3, .grid-5, .grid-9{
+	background: #2f454e;
+}
+
+.flex-container {
+    display: flex;
+	justify-content: center;
+	background: #efefef;
+}
+
+header{
+	text-align: center;
+}
+
+.shuffleSortButtons{
+	border-top: 10px solid #bfbfbf;
+    padding-top: 30px;
+	display: grid;
+	height: max-content;
+	gap: 30px;
+}
+
+button {
+	width: 200px;
+	border-radius: 5px;
+	background: #72c3dc;
+	border: 1px solid #72c3dc;
+	height: 50px;
+	color: #ffffff;
+	font-size: large;
+	box-shadow: 0px 5px 0px #2b8ead;
+	cursor: pointer;
+}
+footer{
+	font-style: italic;
+	text-align: center;
+	padding: 30px;
+	background: #efefef;
+	}
+footer > p{
+margin: unset;
+}
+
+@media only screen and (max-width: 992px){
+	.wrapper{
+	background: none;
+	margin: 0px 100px 0px 100px;
+}
+	.flex-container {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		background: none;
+	}
+	#shuffleAndSortGrids { 
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		border: none;
+		grid-template-rows: repeat(9, 100px);
+		gap: 15px;
+		margin-top: 30px;
+		padding-right:unset;
+	}
+	.shuffleSortButtons{
+		display: flex;
+		border: none;
+		padding-top: 30px;
+		height: max-content;
+		justify-content: center;
+	}
+	.grids {
+	background: #EFEFEF;
+	color : #000000;
+	}
+	
+	.grid-1, .grid-8{
+		border-left: 20px solid #6f98a8;
+	}
+	.grid-2, .grid-4{
+		border-left: 20px solid #2b8ead;
+	}
+	.grid-6, .grid-7{
+		border-left: 20px solid #bfbfbf;
+	}
+	.grid-3, .grid-5, .grid-9{
+		border-left: 20px solid #2f454e;
+	}
+	button {
+		width: 150px;
+		border-radius: 15px;
+		height: 75px;
+	}
+	footer{
+		font-style: italic;
+		text-align: center;
+		padding: 30px;
+		background: none;
+	}
+	header {
+		background: #000000;
+		color : #ffffff;
+		padding: 20px;
+	}
+	h1 {
+		margin: unset;
+	}
+
+}
